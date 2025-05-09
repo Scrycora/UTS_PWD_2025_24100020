@@ -1,0 +1,88 @@
+:root {
+    --gradient-bg: linear-gradient(to right, #ff69b4, #d04894);
+    --pink_pastel: #f8c8dc;
+    --pink: #ff69b4;
+    --pink_drak: #d04894;
+    --text: #333;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: var(--gradient-bg);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+body {
+    font-family: 'Segoe UI';
+    background-color: #fff0f5;
+    color: var(--text);
+}
+@keyframes bounce {
+    40% {}
+    60% {}
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: white;
+    color: #d04894;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    transform: background-color #f8c8dc;
+}
+section {
+    padding: 60px 20px;
+    max-width: 600;
+    margin: 0 auto;
+    text-align: center;
+}
+section h3 {
+    font-size: 2.rem;
+    margin-bottom: 15px;
+}
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.feature-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.feature-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transfrom 0.3s ease;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+.cta {
+    background-color: #f8c8dc;
+    text-align: center;
+}
+.cta p {
+    font-size: 1rem;
+}
+footer {
+    background-color: #ff69b4;
+    text-align: center;
+    color:#333;
+    padding: 30px 20px;
+}
